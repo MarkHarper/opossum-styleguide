@@ -1,0 +1,70 @@
+/*************************
+Colors
+*************************/
+
+$white: #EEE;
+$black: #333;
+$primary-color: HSLA(181, 72%, 45%, 1);
+
+/*************************
+Fonts
+*************************/
+
+$font: 'Open Sans', sans-serif;
+
+/**************************
+Mixins
+**************************/
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/**************************
+Page
+**************************/
+
+body {
+	
+}
+
+.question-container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.new_question {
+  text-align: center;
+  width: 100%;
+}
+
+.new-question-header {
+  width: 20%;
+  float: left;
+}
+
+.question-type-container {
+  width: 20%;
+  float: left;
+}
+
+.field-container {
+  width: 40%;
+  float: left;
+}
+
+.create {
+  width: 20%;
+  float: left;
+}
+
+.back {
+  display: block;
+  width: 15%;
+  text-align: center;
+  @include center;
+}
