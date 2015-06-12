@@ -1,31 +1,12 @@
 @import 'reset';
+@import 'pure';
 @import 'defaults';
-
-.nav-container{
-  background: #262626;
-  color: gray;
-  width: 20%;
-}
-
-.logo{
-  margin-left: 1em;
-}
+@import 'new-survey';
+@import 'header';
 
 
-.red-button{
-  position: relative;
-  left: 35%;
-  border-radius: 2em;
-}
 
-.nav-list{
-  line-height: 1.5em;
-  margin-left: 1em;
-}
-
-.header{
-  position: absolute;
-  top: 2em;
-  left: 25%;
-  width: 100%;
-}
+$white: #EEE;
+$black: #333;
+$fontfamily: 'Open Sans', sans-serif;
+$primary-color: HSLA(181, 72%, 45%, 1);

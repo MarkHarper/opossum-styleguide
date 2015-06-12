@@ -1,0 +1,84 @@
+$white: #EEE;
+$black: #333;
+$fontfamily: 'Open Sans', sans-serif;
+$primary-color: HSLA(181, 72%, 45%, 1);
+
+@mixin center {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+body{
+  background-color: white;
+  color: $black;
+  font-family: $fontfamily;
+}
+
+.pure-menu-horizontal{
+  background-color: $white;
+  height: 4em;
+}
+
+.pure-menu-list{
+  margin-top: 1em;
+}
+
+a{
+  text-decoration: none;
+  color: $black;
+  font-size: 14pt;
+  margin: 1em;
+
+}
+
+.form-container{
+  background-color: $white;
+  position:absolute;
+  width:300px;
+  z-index:15;
+  top:25%;
+  left:50%;
+  margin:-100px 0 0 -150px;
+  margin-top: 1em;
+}
+
+.header{
+  text-align: center;
+  margin-top: 4em;
+  font-size: 14pt;
+}
+
+.new_survey{
+  margin-top: 2em;
+  text-align: center;
+}
+
+.field{
+  line-height: 2em;
+}
+
+.actions{
+  position: relative;
+  background-color: $primary-color;
+  border-radius: .5em;
+  color: $white;
+  width: 33%;
+  top: 75%;
+  left: 34%;
+  margin-bottom: 4em;
+  margin-top: 1em;
+
+}
+
+.createSurvey{
+  background-color: $primary-color;
+  border-radius: .5em;
+  color: $white;
+  visibility: hidden;
+}
+
+.createSurvey:hover{
+
+}
