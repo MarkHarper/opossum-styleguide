@@ -16,11 +16,28 @@ $font: 'Open Sans', sans-serif;
 Mixins
 **************************/
 
-@mixin center {
+@mixin center-vert {
   position: absolute;
   top: 50%;
+  transform: translate(-50%);
+}
+
+@mixin center-horizontal {
+  position: absolute;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
 }
 
 
@@ -29,12 +46,18 @@ Page
 **************************/
 
 body {
-	
+  background-color: white;
 }
 
 .question-container {
-	width: 80%;
+	width: 60%;
 	margin: 0 auto;
+  @include center-vert;
+  @include center-horizontal;
+  background-color: $white;
+  padding: 0.5em 0.5em;
+  border-radius: 5px;
+  font-family: $font;
 }
 
 .new_question {
@@ -43,28 +66,69 @@ body {
 }
 
 .new-question-header {
-  width: 20%;
   float: left;
+  display: inline-block;
+  position: absolute;
+  left: -14%;
+  margin: 0.4em -1em;
+  font-size: 1.4em;
 }
 
 .question-type-container {
   width: 20%;
+  display: inline-block;
   float: left;
+  padding: 0.8% 0;
+}
+
+.question-type-label {
+  text-align: center;
+  background-color: HSLA(73, 12%, 85%, 1);
+  padding: 0.3em 1.5em;
+  border-radius: 5px;
+  color: white;
+  text-shadow: 0 1px 1px rgba(0,0,0,.3);
+  cursor: pointer;
+}
+
+.question_question_type {
+  margin-left: 0.8em;
 }
 
 .field-container {
-  width: 40%;
-  float: left;
+  width: 50%;
+  margin: 0 auto;
+  display: inline-block;
+  padding: 0.3% 0;
+}
+
+.question_value {
+  width: 60%;
+  font-size: 1em;
+  margin: 0 0 0 1.5em;
 }
 
 .create {
-  width: 20%;
-  float: left;
+  width: 15%;
+  float: right;
+  display: inline-block;
+  padding: 0.3em 1.5em;
+  text-align: center;
+  background-color: HSLA(73, 12%, 85%, 1);
+  border-radius: 5px;
+  color: white;
+  text-shadow: 0 1px 1px rgba(0,0,0,.3);
+  cursor: pointer;
+  text-align: center;
 }
 
-.back {
-  display: block;
-  width: 15%;
-  text-align: center;
-  @include center;
+.create-button {
+  margin: 0 1em;
+  float: right;
+  background-color: $primary-color;
 }
+
+.pure-form fieldset {
+  padding: 0.15em 0 0.15em;
+}
+
