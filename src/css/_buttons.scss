@@ -6,6 +6,7 @@ $white: #EEE;
 $black: #333;
 $primary-color: HSLA(181, 72%, 45%, 1);
 $delete-color: HSLA(347, 100%, 50%, 1);
+$general-color: HSLA(181, 5%, 45%, 1);;
 
 /*************************
 Fonts
@@ -25,5 +26,10 @@ $font: 'Open Sans', sans-serif;
 
 .add-button {
 	background-color: $primary-color;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.general {
+	background-color: $general-color;
 	font-family: 'Open Sans', sans-serif;
 }

@@ -1431,6 +1431,10 @@ Fonts
   background-color: HSLA(181, 72%, 45%, 1);
   font-family: 'Open Sans', sans-serif; }
 
+.general {
+  background-color: HSLA(181, 5%, 45%, 1);
+  font-family: 'Open Sans', sans-serif; }
+
 /*************************
 Colors
 *************************/
