@@ -1,0 +1,29 @@
+/*************************
+Colors
+*************************/
+
+$white: #EEE;
+$black: #333;
+$primary-color: HSLA(181, 72%, 45%, 1);
+$delete-color: HSLA(347, 100%, 50%, 1);
+
+/*************************
+Fonts
+*************************/
+
+$font: 'Open Sans', sans-serif;
+
+.create-button {
+	font-family: 'Open Sans', sans-serif;
+	background-color: $primary-color;
+}
+
+.delete-button {
+	background-color: $delete-color;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.add-button {
+	background-color: $primary-color;
+	font-family: 'Open Sans', sans-serif;
+}

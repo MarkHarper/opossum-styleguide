@@ -2,6 +2,7 @@
 @import 'defaults';
 @import 'pure';
 @import 'new-question';
+@import 'buttons';
 
 /*************************
 Colors
@@ -10,6 +11,7 @@ Colors
 $white: #EEE;
 $black: #333;
 $primary-color: HSLA(181, 72%, 45%, 1);
+$delete-color: HSLA(347, 100%, 50%, 1);
 
 /*************************
 Fonts

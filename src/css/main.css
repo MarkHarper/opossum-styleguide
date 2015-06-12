@@ -1408,12 +1408,28 @@ body {
   text-align: center; }
 
 .create-button {
-  margin: 0 1em;
-  float: right;
   background-color: HSLA(181, 72%, 45%, 1); }
 
 .pure-form fieldset {
   padding: 0.15em 0 0.15em; }
+
+/*************************
+Colors
+*************************/
+/*************************
+Fonts
+*************************/
+.create-button {
+  font-family: 'Open Sans', sans-serif;
+  background-color: HSLA(181, 72%, 45%, 1); }
+
+.delete-button {
+  background-color: HSLA(347, 100%, 50%, 1);
+  font-family: 'Open Sans', sans-serif; }
+
+.add-button {
+  background-color: HSLA(181, 72%, 45%, 1);
+  font-family: 'Open Sans', sans-serif; }
 
 /*************************
 Colors
