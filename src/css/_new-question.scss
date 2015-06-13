@@ -60,11 +60,6 @@ body {
   font-family: $font;
 }
 
-.new_question {
-  text-align: center;
-  width: 100%;
-}
-
 .new-question-header {
   float: left;
   display: inline-block;
@@ -74,52 +69,14 @@ body {
   font-size: 1.4em;
 }
 
-.question-type-container {
-  width: 20%;
-  display: inline-block;
-  float: left;
-  padding: 0.8% 0;
-}
-
-.question-type-label {
-  text-align: center;
-  background-color: HSLA(73, 12%, 85%, 1);
-  padding: 0.3em 1.5em;
-  border-radius: 5px;
-  color: white;
-  text-shadow: 0 1px 1px rgba(0,0,0,.3);
-  cursor: pointer;
-}
-
 .question_question_type {
   margin-left: 0.8em;
-}
-
-.field-container {
-  width: 50%;
-  margin: 0 auto;
-  display: inline-block;
-  padding: 0.3% 0;
 }
 
 .question_value {
   width: 60%;
   font-size: 1em;
   margin: 0 0 0 1.5em;
-}
-
-.create {
-  width: 15%;
-  float: right;
-  display: inline-block;
-  padding: 0.3em 1.5em;
-  text-align: center;
-  background-color: HSLA(73, 12%, 85%, 1);
-  border-radius: 5px;
-  color: white;
-  text-shadow: 0 1px 1px rgba(0,0,0,.3);
-  cursor: pointer;
-  text-align: center;
 }
 
 .create-button {
