@@ -1365,6 +1365,12 @@ a:hover {
 .field {
   line-height: 2em; }
 
+.create-button {
+  font-family: 'Open Sans', sans-serif;
+  background-color: HSLA(181, 72%, 45%, 1);
+  margin-top: 2em;
+  margin-bottom: 1em; }
+
 .actions {
   position: relative;
   background-color: HSLA(181, 72%, 45%, 1);
@@ -1381,6 +1387,3 @@ a:hover {
   border-radius: .5em;
   color: #EEE;
   visibility: hidden; }
-
-.pure-menu {
-  color: black; }
